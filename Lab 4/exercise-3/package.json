@@ -1,0 +1,19 @@
+{
+  "name": "exercise-3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "should": "^13.2.3"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "moda": "^2.0.0"
+  },
+  "description": ""
+}
