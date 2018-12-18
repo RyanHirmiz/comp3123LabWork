@@ -1,0 +1,40 @@
+<!--Team Member #1: Jin Kwan Kim
+Student ID: 101058670-->
+
+<!--Team Member #2: Ryan Hirmiz
+Student ID: 101086605-->
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Title: </th>
+      <th scope="col">Running Time: </th>
+      <th scope="col">Genre</th>
+      <th scope="col">Rating: </th>
+      <th scope="col">Director: </th>
+      <th scope="col">Status: </th>
+      <th scope="col">Details: </th>
+      <th scope="col">Update</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let movie of movies">
+      <th scope="row">{{movie.id}}</th>
+      <td>{{movie.title}}</td>
+      <td>{{movie.runningtime}}</td>
+      <td>{{movie.genre}}</td>
+      <td>{{movie.rating}}</td>
+      <td>{{movie.director}}</td>
+      <td>{{movie.status}}</td>
+      
+      <td><button type="button" class="btn btn-primary" routerLink="/detail/{{movie.id}}">Details</button></td>
+      <td><button type="button" class="btn btn-primary" routerLink="/detail/{{movie.id}}">Update</button></td>
+      <td><button type="button" class="btn btn-primary" routerLink="/detail/{{movie.id}}">Delete</button></td>
+        
+      
+    </tr>
+  </tbody>
+</table>
+
